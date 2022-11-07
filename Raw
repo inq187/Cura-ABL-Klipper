@@ -38,7 +38,7 @@ G1 X5 Y20 Z0.3 F5000.0 ; Move over to prevent blob squish
 
 A Advanced Gcode for ABL after the Bed heating is done (Nozzle starts heating too)
 --------------------------------------
- ; Ender 3 Custom Start G-code
+; Ender 3 Custom Start G-code
 M190 S{material_bed_temperature} ; start heating the bed to what is set in Cura and WAIT
 M104 S{material_print_temperature} ﻿T0 ; start preheating hotend WITHOUT wait to what is set in Cura
 M280 P0 S160 ; BLTouch alarm release

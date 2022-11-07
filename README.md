@@ -12,3 +12,6 @@ For Printer.cfg i provided 2 Macros, you decide if you want to save the Mesh eve
 A Basic Gcode with standard heating
 
 A Advanced Gcode for ABL after the Bed heating is done (Nozzle starts heating too)
+
+
+If the format of the Gcode looks weird in Cura just double click on the text

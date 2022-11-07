@@ -40,13 +40,13 @@ A Advanced Gcode for ABL after the Bed heating is done (Nozzle starts heating to
 --------------------------------------
 ; Ender 3 Custom Start G-code
 M190 S{material_bed_temperature} ; start heating the bed to what is set in Cura and WAIT
-M104 S{material_print_temperature} ﻿T0 ; start preheating hotend WITHOUT wait to what is set in Cura
+M104 S{material_print_temperature} ; start preheating hotend WITHOUT wait to what is set in Cura
 M280 P0 S160 ; BLTouch alarm release
 G4 P100 ; delay for BLTouch
 G28 ; home
 G29 ; auto bed leveling
 M190 S{material_bed_temperature} ; start heating the bed to what is set in Cura and WAIT
-M109 S{material_print_temperature} ﻿T0 ; start heating hotend to what is set in Cura and WAIT
+M109 S{material_print_temperature} ; start heating hotend to what is set in Cura and WAIT
 G92 E0 ; Reset Extruder
 
 G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
